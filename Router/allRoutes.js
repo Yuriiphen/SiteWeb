@@ -10,6 +10,12 @@ export const allRoutes = [
     new Route("/account", "Mon compte", "/pages/auth/account.html"),
     new Route("/editPassword", "Modifier votre mot de passe", "/pages/auth/editPassword.html"),
     new Route("/reservation", "Vos réservations", "/pages/reservation/allResa.html"),
+    new Route("/reserver", "Réserver", "/pages/reservation/reserver.html"),
+    new Route("/Annulation", "Annuler une réservation", "/pages/reservation/Annulation.html"),
+    new Route("/ModifierResa", "Modifier une réservation", "/pages/reservation/ModifierResa.html"),
+    new Route("/validAnnul", "Annulation confirmée", "/pages/reservation/validAnnul.html"),
+    new Route("/confirmAnnul", "Confirmer l'annulation", "/pages/reservation/confirmAnnul.html"),
+
 
 
 ];
