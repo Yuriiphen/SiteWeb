@@ -75,3 +75,58 @@ p{
         transition: all 0.3s;
     }
 }
+
+
+.menu-page {
+  background-color: #f6f4f1;
+  padding-bottom: 80px;
+}
+
+
+.menu-container {
+  
+  max-width: 1100px;
+  margin: -100px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 0 30px;
+}
+
+.menu-card {
+  margin-top: 200px;
+  background: #1e1a17;
+  color: #eae6df;
+  border-radius: 20px;
+  padding: 50px;
+  text-align: center;
+}
+
+.menu-card.wine {
+  background: #3a2a1d;
+}
+
+.menu-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.menu-card h3 {
+  font-size: 1.1rem;
+  margin: 30px 0 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-card p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .menu-container {
+    grid-template-columns: 1fr;
+    margin-top: -60px;
+  }
+}
