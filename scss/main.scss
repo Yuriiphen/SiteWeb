@@ -21,6 +21,7 @@ p{
 
 .hero-scene{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content:"";
         position: absolute;
@@ -129,4 +130,8 @@ p{
     grid-template-columns: 1fr;
     margin-top: -60px;
   }
+}
+
+.form-label{
+    color: $primary;
 }

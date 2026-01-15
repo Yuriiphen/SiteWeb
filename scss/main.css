@@ -12003,6 +12003,7 @@ p {
 
 .hero-scene {
   position: relative;
+  margin-bottom: 15px;
 }
 .hero-scene::before {
   content: "";
@@ -12101,4 +12102,7 @@ p {
     grid-template-columns: 1fr;
     margin-top: -60px;
   }
+}
+.form-label {
+  color: #906427;
 }/*# sourceMappingURL=main.css.map */
