@@ -5,66 +5,193 @@
     </div>
 </div>
 
-<div class="text-center pt-4 mt-5">
-    <a href="#" class="btn btn-primary">Réserver</a>
+
+<div class="text-center pt-4 mt-5 mb-4">
+    <a href="/reserver" class="btn btn-primary">Réserver</a>
 </div>
 
-<section class="menu-container">
-        <article class="menu-card">
-                        <h2>Carte</h2>
+<section class="menu-section py-5">
+  <div class="container">
+    <div class="row">
 
-                        <h3>Entrées</h3>
-                        <ul>
-                          <p>Velouté de potimarron, éclats de noisettes</p>
-                          <p>Tartare de saumon citronné et aneth</p>
-                          <p>Gaspacho de tomates et concombre</p>
-                          <p>Carpaccio de bœuf, copeaux de parmesan</p>
-                        </ul>
-                        <h3>Plats</h3>
-                         <ul>
-                          <p>Pavé de saumon, risotto au citron</p>
-                          <p>Magret de canard, sauce miel et balsamique</p>
-                          <p>Pâtes fraîches à la truffe et parmesan</p>
-                          <p>Curry de légumes et lait de coco</p>
-                        </ul>
+      <!-- COLONNE GAUCHE : Carte -->
+      <div class="col-lg-4 mb-4 order-1 order-lg-1">
+        <!-- Entrées -->
+        <h3 class="mb-4">Entrées</h3>
+        <ul class="list-group mb-4">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Carpaccio de bœuf, copeau de parmesan
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Velouté de potimarron éclats de noisettes
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Tartare de saumon citronné et aneth
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Gaspacho de tomates et concombres
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          
+        </ul>
 
-                        <h3>Fromages et desserts</h3>
-                        <ul>
-                          <p>Assiette de fromages affinés</p>
-                          <p>Panna cotta aux fruits rouges</p>
-                          <p>Tarte aux pommes maison</p>
-                        </ul>
-        
-        
-        </article>
-    <article class="menu-card wine">
-      <h2>Carte des vins</h2>
+        <!-- Plats -->
+        <h3 class="mb-4">Plats</h3>
+        <ul class="list-group mb-4">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Pavé de saumon, risotto au citron
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Magret de canard, sauce au miel
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Pâtes fraîches à la truffe et parmesan
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Curry de légumes et lait de coco
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
 
-      <h3>Vins rouges</h3>
-      <ul>
-        <p>Bordeaux – Médoc</p>
-        <p>Bourgogne – Pinot Noir</p>
-        <p>Languedoc – Minervois</p>
-        <p>Italie – Chianti Classico</p>
-      </ul>
+        </ul>
 
-      <h3>Vins blancs et rosés</h3>
-      <ul>
-        <p>Loire – Sancerre</p>
-        <p>Italie – Pinot Grigio</p>
-        <p>Côtes de Provence</p>
-        <p>Pays d’Oc – Rosé de Grenache</p>
-      </ul>
+        <!-- Desserts -->
+        <h3 class="mb-4">Fromages & Desserts</h3>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Assiette de fromages affinés
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Panna cotta aux fruits rouges
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Tarte aux pommes maison
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+        </ul>
+      </div>
 
-      <h3>Bulles et Champagnes</h3>
-      <ul>
-        <p>Champagne Brut</p>
-        <p>Champagne Rosé</p>
-        <p>Prosecco DOC (Italie)</p>
-      </ul>
-    </article>
+      <!-- COLONNE CENTRALE : Votre Menu -->
+      <div class="col-lg-4 mb-4 order-3 order-lg-2">
+        <div class="card">
+          <div class="card-header text-center">
+            <h4>Votre Menu</h4>
+          </div>
+          <div class="card-body">
+            <h6 class="text-center text-muted mt-5">Entrées</h6>
+            <hr>
+            <p class="text-dark text-center">Carpaccio de bœuf, copeaux de parmesan X1</p>
+            <p class="text-dark text-center">Gaspacho de tomates et concombre X1</p>
+            <h6 class="text-center text-muted mt-5">Plats</h6>
+            <hr>
+            <p class="text-dark text-center">Magret de canard, sauce miel et balsamique X2</p>
+            <h6 class="text-center text-muted mt-5">Desserts</h6>
+            <hr>
+            <p class="text-dark text-center">Panna cotta aux fruits rouges X2</p>
+            <h6 class="text-center text-muted mt-5">Vins</h6>
+            <hr>
+            <p class="text-dark text-center">Bordeaux - Médoc X1</p>
+          </div>
+          <div class="card-footer text-white text-end">
+            <strong>Total : ??? €</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLONNE DROITE : Vins -->
+      <div class="col-lg-4 mb-4 order-2 order-lg-3">
+        <h3 class="mb-4">Vins rouges</h3>
+        <ul class="list-group mb-4">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Bordeaux - Médoc
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Bourgogne - Pinot Noir
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Languedoc - Minervois
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Italie - Chianti Classico
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+        </ul>
+
+        <h3 class="mb-4">Vins blancs & rosés</h3>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Loire - Sancerre
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Italie - Pinot Grigio
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Côtes de Provence - Rosé
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Pays d'Oc - Rosé de Grenache
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+        </ul>
+
+        <h3 class="mb-4 mt-4">Bulles et Champagnes</h3>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Champagne Brut Tradition
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Champagne Rosé
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button class="btn btn-sm btn-outline-primary">-</button>
+            Prosecco DOC (Italie)
+            <button class="btn btn-sm btn-outline-primary">+</button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<div class="text-center pt-4 mt-5">
-    <a href="#" class="btn btn-primary">Réserver</a>
+<div class="text-center">
+    <a href="/#" class="btn btn-primary">Valider le menu</a>
 </div>
+
+
