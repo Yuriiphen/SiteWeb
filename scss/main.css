@@ -12086,4 +12086,10 @@ p {
   display: block;
   color: #292222;
   padding: 10px;
+}
+
+@media (max-width: 991px) {
+  .card {
+    margin-top: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */

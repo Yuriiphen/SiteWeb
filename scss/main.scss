@@ -120,3 +120,9 @@ p{
         padding: 10px;
     }
 }
+
+@media (max-width: 991px) {
+  .card {
+    margin-top: 2rem;
+  }
+}
