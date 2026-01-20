@@ -12092,4 +12092,53 @@ p {
   .card {
     margin-top: 2rem;
   }
+}
+/* MOBILE ONLY */
+@media (max-width: 991px) {
+  /* Cacher les images du bloc central */
+  [data-show=disconnected] img {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  /* Centrer les titres */
+  .menu-section h3, .menu-section .h3 {
+    text-align: center !important;
+  }
+  /* Centrer les listes */
+  .menu-section ul {
+    text-align: center;
+  }
+  /* Centrer les items */
+  .menu-section .list-group-item {
+    justify-content: center;
+    text-align: center;
+  }
+  /* Boutons + / - bien alignés */
+  .menu-section .list-group-item button {
+    margin: 0 0.25rem;
+  }
+}
+/* CORRECTION ALIGNEMENT VINS - MOBILE ONLY */
+@media (max-width: 991px) {
+  /* Colonne vins : forcer le centrage */
+  .menu-section .col-lg-4.text-justify {
+    text-align: center !important;
+  }
+  /* Titres vins */
+  .menu-section .text-end {
+    text-align: center !important;
+  }
+  /* Items de la liste vins */
+  .menu-section .list-group-item.text-end {
+    text-align: center !important;
+    justify-content: center !important;
+  }
+}
+/* Correction débordement email - mobile */
+@media (max-width: 576px) {
+  footer p {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
 }/*# sourceMappingURL=main.css.map */
