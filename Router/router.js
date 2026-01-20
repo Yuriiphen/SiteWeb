@@ -27,22 +27,28 @@ const LoadContentPage = async () => {
   // Récupération de l'URL actuelle
   const actualRoute = getRouteByUrl(path);
 
-  // Vérifier les droits d'accès à la page
-  const allRolesArray = actualRoute.authorize;
+  console.log("DEBUG ROUTE:", actualRoute.path);
+  console.log("DEBUG authorize:", actualRoute.authorize);
+  console.log("DEBUG isConnected:", isConnected());
+  console.log("DEBUG role:", getRole());
 
-  if(allRolesArray.length > 0){
-    if(allRolesArray.includes("disconnected")){
-      if(isConnected()){
+  // Vérifier les droits d'accès à la page
+  const allRolesArray = actualRoute.authorize || [];
+
+  if (allRolesArray.length > 0) {
+    if (allRolesArray.includes("disconnected")) {
+      if (isConnected()) {
         window.location.replace("/");
       }
-    }
-    else{
+   } else {
       const roleUser = getRole();
-      if(!allRolesArray.includes(roleUser)){
+      if (!allRolesArray.includes(roleUser)) {
         window.location.replace("/");
       }
     }
   }
+
+
 
   // Récupération du contenu HTML de la route
   const html = await fetch(actualRoute.pathHtml).then((data) => data.text());
